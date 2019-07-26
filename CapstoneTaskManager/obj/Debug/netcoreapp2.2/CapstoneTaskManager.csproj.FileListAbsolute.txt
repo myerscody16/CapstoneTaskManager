@@ -1,0 +1,11 @@
+C:\Users\myers\source\repos\Week two tutorials, labs, capstone, and assessment\CapstoneTaskManager\CapstoneTaskManager\bin\Debug\netcoreapp2.2\CapstoneTaskManager.deps.json
+C:\Users\myers\source\repos\Week two tutorials, labs, capstone, and assessment\CapstoneTaskManager\CapstoneTaskManager\bin\Debug\netcoreapp2.2\CapstoneTaskManager.runtimeconfig.json
+C:\Users\myers\source\repos\Week two tutorials, labs, capstone, and assessment\CapstoneTaskManager\CapstoneTaskManager\bin\Debug\netcoreapp2.2\CapstoneTaskManager.runtimeconfig.dev.json
+C:\Users\myers\source\repos\Week two tutorials, labs, capstone, and assessment\CapstoneTaskManager\CapstoneTaskManager\bin\Debug\netcoreapp2.2\CapstoneTaskManager.dll
+C:\Users\myers\source\repos\Week two tutorials, labs, capstone, and assessment\CapstoneTaskManager\CapstoneTaskManager\bin\Debug\netcoreapp2.2\CapstoneTaskManager.pdb
+C:\Users\myers\source\repos\Week two tutorials, labs, capstone, and assessment\CapstoneTaskManager\CapstoneTaskManager\obj\Debug\netcoreapp2.2\CapstoneTaskManager.csprojAssemblyReference.cache
+C:\Users\myers\source\repos\Week two tutorials, labs, capstone, and assessment\CapstoneTaskManager\CapstoneTaskManager\obj\Debug\netcoreapp2.2\CapstoneTaskManager.csproj.CoreCompileInputs.cache
+C:\Users\myers\source\repos\Week two tutorials, labs, capstone, and assessment\CapstoneTaskManager\CapstoneTaskManager\obj\Debug\netcoreapp2.2\CapstoneTaskManager.AssemblyInfoInputs.cache
+C:\Users\myers\source\repos\Week two tutorials, labs, capstone, and assessment\CapstoneTaskManager\CapstoneTaskManager\obj\Debug\netcoreapp2.2\CapstoneTaskManager.AssemblyInfo.cs
+C:\Users\myers\source\repos\Week two tutorials, labs, capstone, and assessment\CapstoneTaskManager\CapstoneTaskManager\obj\Debug\netcoreapp2.2\CapstoneTaskManager.dll
+C:\Users\myers\source\repos\Week two tutorials, labs, capstone, and assessment\CapstoneTaskManager\CapstoneTaskManager\obj\Debug\netcoreapp2.2\CapstoneTaskManager.pdb

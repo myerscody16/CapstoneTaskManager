@@ -77,7 +77,7 @@ namespace CapstoneTaskManager
             {
                 case (1):
                     Task.ListTasks(caseyTasks);
-                    Console.WriteLine(caseyTasks);
+                    PrintLists(caseyTasks);
                     break;
                 case (2):
                     //figure out which employee's task list needs to be added to the choose their task list to add to
@@ -159,6 +159,13 @@ namespace CapstoneTaskManager
                     Console.WriteLine("Goodbye.");
                     System.Environment.Exit(0);
                     break;
+            }
+        }
+        public static void PrintLists(List<string> list)
+        {
+            foreach (string element in list)
+            {
+                Console.WriteLine(element);
             }
         }
 

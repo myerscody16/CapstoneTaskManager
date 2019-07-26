@@ -16,9 +16,9 @@ namespace CapstoneTaskManager
                 try
                 {
                     int usrChoice = int.Parse(Console.ReadLine());
-                    if (usrChoice >= 1 && usrChoice <= startMenu.Count - 1)
+                    if (usrChoice >= 1 && usrChoice <= startMenu.Count )
                     {
-                        userChoice = startMenu[usrChoice];
+                        userChoice = startMenu[usrChoice-1];
                         cont = false;
                     }
                     else
@@ -92,7 +92,7 @@ namespace CapstoneTaskManager
         public static string ChooseEmployee(string message, List<string> employeeNames)
         {
             Console.WriteLine(message);
-            Console.WriteLine(employeeNames);
+            Options.PrintLists(employeeNames);
             string choosenEmployee = "";
             bool cont = true;
             while (cont)
@@ -100,8 +100,8 @@ namespace CapstoneTaskManager
                 string usrInput = Console.ReadLine();
                 try
                 {
-                    int nameNum = int.Parse(usrInput);
-                    if(nameNum >=1 && nameNum <= employeeNames.Count - 1)
+                    int nameNum = int.Parse(usrInput)-1;
+                    if(nameNum >=0 && nameNum <= employeeNames.Count - 1)
                     {
                         choosenEmployee = employeeNames[nameNum];
                         cont = false;
@@ -150,7 +150,7 @@ namespace CapstoneTaskManager
         public static int ChooseAnInteraction(string message, List<string> startMenu)
         {
             Console.WriteLine(message);
-            Console.WriteLine(startMenu);
+            Options.PrintLists(startMenu);
             int usrNum = 0;
             bool cont = true;
             while (cont)
