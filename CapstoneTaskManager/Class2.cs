@@ -8,28 +8,28 @@ namespace CapstoneTaskManager
     {
         public static void KelseyOption(string message, int interactionChoice, List<string> kelseyTasks, List<string> kelseyCompletedTasks)//rename to correct naming convention (verb first)
         {
-            //idk if returning anything is useful
-            Console.WriteLine(message);
-            Console.WriteLine("1. List tasks \n 2. Add task \n 3. Delete task \n 4. Mark tast complete \n 5. Quit");
-            switch (interactionChoice)
+            switch (interactionChoice+1)
             {
                 case (1):
                     Task.ListTasks(kelseyTasks);
-                    Console.WriteLine(kelseyTasks);
+                    PrintLists(kelseyTasks);
                     break;
                 case (2):
-                    //figure out which employee's task list needs to be added to the choose their task list to add to
-                    kelseyTasks = Task.AddTask(kelseyTasks);//double check that this is  doing what it is supposed to
-                    Console.WriteLine($"Kelsey's new task list is: \n{kelseyTasks}");
+                    kelseyTasks = Task.AddTask(kelseyTasks);
+                    Console.WriteLine($"Kelsey's new task list is: ");
+                    PrintLists(kelseyTasks);
                     break;
                 case (3):
                     kelseyTasks = Task.DeleteTask(kelseyTasks);
-                    Console.WriteLine($"Kelsey's new task list is: \n{kelseyTasks}");
+                    Console.WriteLine($"Kelsey's new task list is: ");
+                    PrintLists(kelseyTasks);
                     break;
                 case (4):
                     kelseyCompletedTasks = Task.FinishATask(kelseyCompletedTasks, kelseyTasks);
-                    Console.WriteLine($"Kelsey's new task list is: \n{kelseyTasks}");
-                    Console.WriteLine($"Kelsey's new completed task list is: \n{kelseyCompletedTasks}");
+                    Console.WriteLine($"Kelsey's new task list is: ");
+                    PrintLists(kelseyTasks);
+                    Console.WriteLine($"Kelsey's new completed task list is: ");
+                    PrintLists(kelseyCompletedTasks);
                     break;
                 case (5):
                     Console.WriteLine("Goodbye.");
@@ -39,28 +39,29 @@ namespace CapstoneTaskManager
         }
         public static void BobOption(string message, int interactionChoice, List<string> bobTasks, List<string> bobCompletedTasks)//rename to correct naming convention (verb first)
         {
-            //idk if returning anything is useful
-            Console.WriteLine(message);
-            Console.WriteLine("1. List tasks \n 2. Add task \n 3. Delete task \n 4. Mark tast complete \n 5. Quit");
-            switch (interactionChoice)
+            switch (interactionChoice+1)
             {
                 case (1):
                     Task.ListTasks(bobTasks);
-                    Console.WriteLine(bobTasks);
+                    PrintLists(bobTasks);
                     break;
                 case (2):
                     //figure out which employee's task list needs to be added to the choose their task list to add to
                     bobTasks = Task.AddTask(bobTasks);//double check that this is  doing what it is supposed to
-                    Console.WriteLine($"Kelsey's new task list is: \n{bobTasks}");
+                    Console.WriteLine($"Bob's new task list is: ");
+                    PrintLists(bobTasks);
                     break;
                 case (3):
                     bobTasks = Task.DeleteTask(bobTasks);
-                    Console.WriteLine($"Kelsey's new task list is: \n{bobTasks}");
+                    Console.WriteLine($"Bob's new task list is: ");
+                    PrintLists(bobTasks);
                     break;
                 case (4):
                     bobCompletedTasks = Task.FinishATask(bobCompletedTasks, bobTasks);
-                    Console.WriteLine($"Kelsey's new task list is: \n{bobTasks}");
-                    Console.WriteLine($"Kelsey's new completed task list is: \n{bobCompletedTasks}");
+                    Console.WriteLine($"Bob's new task list is: ");
+                    PrintLists(bobTasks);
+                    Console.WriteLine($"Bob's new completed task list is: ");
+                    PrintLists(bobCompletedTasks);
                     break;
                 case (5):
                     Console.WriteLine("Goodbye.");
@@ -70,28 +71,28 @@ namespace CapstoneTaskManager
         }
         public static void CaseyOption(string message, int interactionChoice, List<string> caseyTasks, List<string> caseyCompletedTasks)//rename to correct naming convention (verb first)
         {
-            //idk if returning anything is useful
-            Console.WriteLine(message);
-            Console.WriteLine("1. List tasks \n 2. Add task \n 3. Delete task \n 4. Mark tast complete \n 5. Quit");
-            switch (interactionChoice)
+            switch (interactionChoice+1)
             {
                 case (1):
                     Task.ListTasks(caseyTasks);
                     PrintLists(caseyTasks);
                     break;
                 case (2):
-                    //figure out which employee's task list needs to be added to the choose their task list to add to
                     caseyTasks = Task.AddTask(caseyTasks);//double check that this is  doing what it is supposed to
-                    Console.WriteLine($"Kelsey's new task list is: \n{caseyTasks}");
+                    Console.WriteLine($"Casey's new task list is: ");
+                    PrintLists(caseyTasks);
                     break;
                 case (3):
                     caseyTasks = Task.DeleteTask(caseyTasks);
-                    Console.WriteLine($"Kelsey's new task list is: \n{caseyTasks}");
+                    Console.WriteLine($"Casey's new task list is: ");
+                    PrintLists(caseyTasks);
                     break;
                 case (4):
                     caseyCompletedTasks = Task.FinishATask(caseyCompletedTasks, caseyTasks);
-                    Console.WriteLine($"Kelsey's new task list is: \n{caseyTasks}");
-                    Console.WriteLine($"Kelsey's new completed task list is: \n{caseyCompletedTasks}");
+                    Console.WriteLine($"\nCasey's new task list is: ");
+                    PrintLists(caseyTasks);
+                    Console.WriteLine($"\nCasey's new completed task list is: ");
+                    PrintLists(caseyCompletedTasks);
                     break;
                 case (5):
                     Console.WriteLine("Goodbye.");
@@ -104,25 +105,28 @@ namespace CapstoneTaskManager
             //idk if returning anything is useful
             Console.WriteLine(message);
             Console.WriteLine("1. List tasks \n 2. Add task \n 3. Delete task \n 4. Mark tast complete \n 5. Quit");
-            switch (interactionChoice)
+            switch (interactionChoice+1)
             {
                 case (1):
                     Task.ListTasks(kyleTasks);
-                    Console.WriteLine(kyleTasks);
+                    PrintLists(kyleTasks);
                     break;
                 case (2):
-                    //figure out which employee's task list needs to be added to the choose their task list to add to
                     kyleTasks = Task.AddTask(kyleTasks);//double check that this is  doing what it is supposed to
-                    Console.WriteLine($"Kelsey's new task list is: \n{kyleTasks}");
+                    Console.WriteLine($"Kyle's new task list is: ");
+                    PrintLists(kyleTasks);
                     break;
                 case (3):
                     kyleTasks = Task.DeleteTask(kyleTasks);
-                    Console.WriteLine($"Kelsey's new task list is: \n{kyleTasks}");
+                    Console.WriteLine($"Kyle's new task list is: ");
+                    PrintLists(kyleTasks);
                     break;
                 case (4):
                     kyleCompletedTasks = Task.FinishATask(kyleCompletedTasks, kyleTasks);
-                    Console.WriteLine($"Kelsey's new task list is: \n{kyleTasks}");
-                    Console.WriteLine($"Kelsey's new completed task list is: \n{kyleCompletedTasks}");
+                    Console.WriteLine($"Kyle's new task list is: ");
+                    PrintLists(kyleTasks);
+                    Console.WriteLine($"Kyle's new completed task list is: ");
+                    PrintLists(kyleCompletedTasks);
                     break;
                 case (5):
                     Console.WriteLine("Goodbye.");
@@ -132,10 +136,7 @@ namespace CapstoneTaskManager
         }
         public static void SteveOption(string message, int interactionChoice, List<string> steveTasks, List<string> steveCompletedTasks)//rename to correct naming convention (verb first)
         {
-            //idk if returning anything is useful
-            Console.WriteLine(message);
-            Console.WriteLine("1. List tasks \n 2. Add task \n 3. Delete task \n 4. Mark tast complete \n 5. Quit");
-            switch (interactionChoice)
+            switch (interactionChoice+1)
             {
                 case (1):
                     Task.ListTasks(steveTasks);
@@ -144,16 +145,20 @@ namespace CapstoneTaskManager
                 case (2):
                     //figure out which employee's task list needs to be added to the choose their task list to add to
                     steveTasks = Task.AddTask(steveTasks);//double check that this is  doing what it is supposed to
-                    Console.WriteLine($"Kelsey's new task list is: \n{steveTasks}");
+                    Console.WriteLine($"Steve's new task list: ");
+                    PrintLists(steveTasks);
                     break;
                 case (3):
                     steveTasks = Task.DeleteTask(steveTasks);
-                    Console.WriteLine($"Kelsey's new task list is: \n{steveTasks}");
+                    Console.WriteLine($"Steve's new task list: ");
+                    PrintLists(steveTasks);
                     break;
                 case (4):
                     steveCompletedTasks = Task.FinishATask(steveCompletedTasks, steveTasks);
-                    Console.WriteLine($"Kelsey's new task list is: \n{steveTasks}");
-                    Console.WriteLine($"Kelsey's new completed task list is: \n{steveCompletedTasks}");
+                    Console.WriteLine("Steve's new task list: ");
+                    PrintLists(steveTasks);
+                    Console.WriteLine($"Steve's new completed task list:");
+                    PrintLists(steveCompletedTasks);
                     break;
                 case (5):
                     Console.WriteLine("Goodbye.");

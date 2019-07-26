@@ -38,14 +38,14 @@ namespace CapstoneTaskManager
         }
         public static void ListTasks(List<string> tasks)
         {
-            Console.WriteLine(tasks);
+            Options.PrintLists(tasks);
         }
         public static List<string> AddTask(List<string> tasks)
         {
             ;
             Console.WriteLine("Please input a task you would like to add to the task list");
             string newTask = Console.ReadLine();
-            tasks.Add($"{tasks.Count+1}. + tasksnewTask");
+            tasks.Add($"{newTask}");
             //need to give each new task a corresponding number
             return tasks;
         }
@@ -70,7 +70,9 @@ namespace CapstoneTaskManager
         }
         public static List<string> FinishATask(List<string> finishedTasks, List<string> tasks)
         {
+            //Make sure user can see the options
             Console.WriteLine("Please input the number corresponding to the task you completed");
+            Options.PrintLists(tasks);
             bool cont = true;
             int usrInput = 0;
             while(cont)
@@ -78,8 +80,11 @@ namespace CapstoneTaskManager
                 try
                 {
                     usrInput = int.Parse(Console.ReadLine());
-                    finishedTasks.Add(tasks[usrInput]);
-                    tasks.Remove(tasks[usrInput]);
+                    finishedTasks.Add(tasks[usrInput-1]);
+                    tasks.Remove(tasks[usrInput-1]);
+                    
+                    
+                    
                     cont = false;
                 }
                 catch
