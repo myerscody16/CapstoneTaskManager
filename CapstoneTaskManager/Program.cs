@@ -36,18 +36,28 @@ namespace CapstoneTaskManager
                     switch (choosenEmployee)
                     {
                         case ("1. Kelsey"):
+                            Console.WriteLine($"Their current task list is as follows:");
+                            foreach(string task in kelseyTasks)
+                           
                             Options.KelseyOption("What would you like to do? Please use the number to select the option.", interactionChoice, kelseyTasks, kelseyCompletedTasks);
                             break;
                         case ("2. Bob"):
+                            Console.WriteLine($"Their current task list is as follows:");
+                            
                             Options.BobOption("What would you like to do? Please use the number to select the option.", interactionChoice, bobTasks, bobCompletedTasks);
                             break;
                         case ("3. Casey"):
+                            Console.WriteLine($"Their current task list is as follows:");
                             Options.CaseyOption("What would you like to do? Please use the number to select the option.", interactionChoice, caseyTasks, caseyCompletedTasks);
                             break;
                         case ("4. Kyle"):
+                            Console.WriteLine($"Their current task list is as follows:");
+                            
                             Options.KyleOption("What would you like to do? Please use the number to select the option.", interactionChoice, kyleTasks, kyleCompletedTasks);
                             break;
                         case ("5. Steve"):
+                            Console.WriteLine($"Their current task list is as follows:");
+                            
                             Options.SteveOption("What would you like to do? Please use the number to select the option.", interactionChoice, steveTasks, steveCompletedTasks);
                             break;
                     }

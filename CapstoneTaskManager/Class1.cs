@@ -52,6 +52,7 @@ namespace CapstoneTaskManager
         public static List<string> DeleteTask(List<string> tasks)
         {
             Console.WriteLine("Please input the number corresponding to the task that you would like to delete");
+            
             bool cont = true;
             while (cont)
             {
@@ -70,7 +71,6 @@ namespace CapstoneTaskManager
         }
         public static List<string> FinishATask(List<string> finishedTasks, List<string> tasks)
         {
-            //Make sure user can see the options
             Console.WriteLine("Please input the number corresponding to the task you completed");
             Options.PrintLists(tasks);
             bool cont = true;
@@ -80,11 +80,9 @@ namespace CapstoneTaskManager
                 try
                 {
                     usrInput = int.Parse(Console.ReadLine());
-                    finishedTasks.Add(tasks[usrInput-1]);
+                    string savedActivity = tasks[usrInput - 1];
+                    finishedTasks.Add(savedActivity);
                     tasks.Remove(tasks[usrInput-1]);
-                    
-                    
-                    
                     cont = false;
                 }
                 catch

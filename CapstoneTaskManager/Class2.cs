@@ -20,11 +20,13 @@ namespace CapstoneTaskManager
                     PrintLists(kelseyTasks);
                     break;
                 case (3):
+                    PrintLists(kelseyTasks);
                     kelseyTasks = Task.DeleteTask(kelseyTasks);
                     Console.WriteLine($"Kelsey's new task list is: ");
                     PrintLists(kelseyTasks);
                     break;
                 case (4):
+                    PrintLists(kelseyTasks);
                     kelseyCompletedTasks = Task.FinishATask(kelseyCompletedTasks, kelseyTasks);
                     Console.WriteLine($"Kelsey's new task list is: ");
                     PrintLists(kelseyTasks);
@@ -46,17 +48,18 @@ namespace CapstoneTaskManager
                     PrintLists(bobTasks);
                     break;
                 case (2):
-                    //figure out which employee's task list needs to be added to the choose their task list to add to
                     bobTasks = Task.AddTask(bobTasks);//double check that this is  doing what it is supposed to
                     Console.WriteLine($"Bob's new task list is: ");
                     PrintLists(bobTasks);
                     break;
                 case (3):
+                    PrintLists(bobTasks);
                     bobTasks = Task.DeleteTask(bobTasks);
                     Console.WriteLine($"Bob's new task list is: ");
                     PrintLists(bobTasks);
                     break;
                 case (4):
+                    PrintLists(bobTasks);
                     bobCompletedTasks = Task.FinishATask(bobCompletedTasks, bobTasks);
                     Console.WriteLine($"Bob's new task list is: ");
                     PrintLists(bobTasks);
@@ -75,7 +78,6 @@ namespace CapstoneTaskManager
             {
                 case (1):
                     Task.ListTasks(caseyTasks);
-                    PrintLists(caseyTasks);
                     break;
                 case (2):
                     caseyTasks = Task.AddTask(caseyTasks);//double check that this is  doing what it is supposed to
@@ -83,11 +85,13 @@ namespace CapstoneTaskManager
                     PrintLists(caseyTasks);
                     break;
                 case (3):
+                    PrintLists(caseyTasks);
                     caseyTasks = Task.DeleteTask(caseyTasks);
                     Console.WriteLine($"Casey's new task list is: ");
                     PrintLists(caseyTasks);
                     break;
                 case (4):
+                    PrintLists(caseyTasks);
                     caseyCompletedTasks = Task.FinishATask(caseyCompletedTasks, caseyTasks);
                     Console.WriteLine($"\nCasey's new task list is: ");
                     PrintLists(caseyTasks);
@@ -104,7 +108,6 @@ namespace CapstoneTaskManager
         {
             //idk if returning anything is useful
             Console.WriteLine(message);
-            Console.WriteLine("1. List tasks \n 2. Add task \n 3. Delete task \n 4. Mark tast complete \n 5. Quit");
             switch (interactionChoice+1)
             {
                 case (1):
@@ -117,11 +120,13 @@ namespace CapstoneTaskManager
                     PrintLists(kyleTasks);
                     break;
                 case (3):
+                    PrintLists(kyleTasks);
                     kyleTasks = Task.DeleteTask(kyleTasks);
                     Console.WriteLine($"Kyle's new task list is: ");
                     PrintLists(kyleTasks);
                     break;
                 case (4):
+                    PrintLists(kyleTasks);
                     kyleCompletedTasks = Task.FinishATask(kyleCompletedTasks, kyleTasks);
                     Console.WriteLine($"Kyle's new task list is: ");
                     PrintLists(kyleTasks);
@@ -149,11 +154,13 @@ namespace CapstoneTaskManager
                     PrintLists(steveTasks);
                     break;
                 case (3):
+                    PrintLists(steveTasks);
                     steveTasks = Task.DeleteTask(steveTasks);
                     Console.WriteLine($"Steve's new task list: ");
                     PrintLists(steveTasks);
                     break;
                 case (4):
+                    PrintLists(steveTasks);
                     steveCompletedTasks = Task.FinishATask(steveCompletedTasks, steveTasks);
                     Console.WriteLine("Steve's new task list: ");
                     PrintLists(steveTasks);
